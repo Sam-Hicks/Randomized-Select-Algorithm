@@ -7,6 +7,8 @@ This algorithm is used to solve the selection problem which seeks to find the it
 
 - Initial call: RANDOMIZED-SELECT(A,1,A.length,i)
 
-```
-![](partition.png)
-```
+![](pseudocode/randomized-select.PNG)
+
+![](pseudocode/randomized-partition.PNG)
+
+![](pseudocode/partition.PNG)
