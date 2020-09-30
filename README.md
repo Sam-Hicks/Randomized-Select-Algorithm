@@ -3,11 +3,12 @@ The Randomized Select Algorithm is a sorting algorithm that is used to find the 
 
 This algorithm is used to solve the selection problem which seeks to find the ith ordered statistic in a set A of n distinct numbers, where 1 ≤ i ≤ n.
 
-Pseudocode:
+***Pseudocode:***
 
 - Initial call: RANDOMIZED-SELECT(A,1,A.length,i)
 
-RANDOMIZED-SELECT(A,p,r,i)
+**RANDOMIZED-SELECT(A,p,r,i)**
+
 if p == r
 	return A[p]
 q = RANDOMIZED-PARTITION(A,p,r)
@@ -19,12 +20,12 @@ else if i < k
 else
 	return RANDOMIZED-SELECT(A,q+1,r,i-k)
 
-RANDOMIZED-PARTITION(A,p,r)
+**RANDOMIZED-PARTITION(A,p,r)**
 i = RANADOM(p,r)
 exchange A[r] with A[i]
 return PARTITION(A,p,r)
 
-PARTITION(A,p,r)
+**PARTITION(A,p,r)**
 x = A[r]
 i = p-1
 for j = p to r-1
